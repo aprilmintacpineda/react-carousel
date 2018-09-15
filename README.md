@@ -9,7 +9,7 @@ See [Demo](https://aprilmintacpineda.github.io/react-carousel/).
 ## install
 
 ```sh
-npm i -s react-carousel js-carousel
+npm i -s @aprilmintacpineda/react-carousel js-carousel
 ```
 
 ## Usage
