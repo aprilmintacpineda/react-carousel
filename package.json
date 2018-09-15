@@ -1,5 +1,5 @@
 {
-  "name": "react-carousel",
+  "name": "@aprilmintacpineda/react-carousel",
   "version": "1.0.0",
   "description": "Carousel component for ReactJS.",
   "main": "lib/index.js",
@@ -24,6 +24,12 @@
       "git add"
     ]
   },
+  "files": [
+    "lib/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git@gh_personal:aprilmintacpineda/react-carousel.git"
