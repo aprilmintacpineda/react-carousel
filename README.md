@@ -1,15 +1,15 @@
 <!-- @format -->
 
-# react-carousel
+# react-js-carousel
 
 Carousel component for ReactJS.
 
-See [Demo](https://aprilmintacpineda.github.io/react-carousel/).
+See [Demo](https://aprilmintacpineda.github.io/react-js-carousel/).
 
 ## install
 
 ```sh
-npm i -s @aprilmintacpineda/react-carousel js-carousel
+npm i -s react-js-carousel js-carousel
 ```
 
 ## Usage
@@ -43,4 +43,4 @@ You can also specify a `className` for the container of the carousel by providin
 - `animationSpeed` is the speed (in terms of milliseconds) of the transition animation.
 - `itemDuration` is the amount of time (in terms of milliseconds) it has to wait before transitioning to the next item.
 
-`react-carousel` uses [js-carousel](https://github.com/aprilmintacpineda/js-carousel).
+`react-js-carousel` uses [js-carousel](https://github.com/aprilmintacpineda/js-carousel).
