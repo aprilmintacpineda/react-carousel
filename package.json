@@ -44,7 +44,7 @@
   "author": "April Mintac Pineda",
   "license": "MIT",
   "dependencies": {
-    "js-carousel": "^1.2.0",
+    "js-carousel": "^1.2.1",
     "react": "^16.5.2"
   },
   "devDependencies": {
