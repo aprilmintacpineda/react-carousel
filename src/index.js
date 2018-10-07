@@ -1,8 +1,9 @@
 /** @format */
 
+import createClass from 'create-react-class';
 import React from 'react';
 
-export default class Carousel extends React.Component {
+export default createClass({
   componentDidMount () {
     // eslint-disable-next-line
     jscarousel(this.carouselContainer, {
@@ -10,8 +11,7 @@ export default class Carousel extends React.Component {
       itemDuration: this.props.itemDuration,
       swipeThreshold: this.props.swipeThreshold
     });
-  }
-
+  },
   render () {
     return (
       <div
@@ -23,4 +23,4 @@ export default class Carousel extends React.Component {
       </div>
     );
   }
-}
+});
