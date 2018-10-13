@@ -12,6 +12,14 @@ export default createClass({
       swipeThreshold: this.props.swipeThreshold
     });
   },
+  componentDidUpdate () {
+    // eslint-disable-next-line
+    jscarousel(this.carouselContainer, {
+      animationSpeed: this.props.animationSpeed,
+      itemDuration: this.props.itemDuration,
+      swipeThreshold: this.props.swipeThreshold
+    });
+  },
   render () {
     return (
       <div

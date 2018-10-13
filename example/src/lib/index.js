@@ -29,6 +29,14 @@ exports.default = (0, _createReactClass2.default)({
       swipeThreshold: this.props.swipeThreshold
     });
   },
+  componentDidUpdate: function componentDidUpdate () {
+    // eslint-disable-next-line
+    jscarousel(this.carouselContainer, {
+      animationSpeed: this.props.animationSpeed,
+      itemDuration: this.props.itemDuration,
+      swipeThreshold: this.props.swipeThreshold
+    });
+  },
   render: function render () {
     var _this = this;
 
