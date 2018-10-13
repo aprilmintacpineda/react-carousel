@@ -24,6 +24,7 @@ exports.default = (0, _createReactClass2.default)({
   componentDidMount: function componentDidMount () {
     // eslint-disable-next-line
     jscarousel(this.carouselContainer, {
+      noClone: true,
       animationSpeed: this.props.animationSpeed,
       itemDuration: this.props.itemDuration,
       swipeThreshold: this.props.swipeThreshold
@@ -32,6 +33,7 @@ exports.default = (0, _createReactClass2.default)({
   componentDidUpdate: function componentDidUpdate () {
     // eslint-disable-next-line
     jscarousel(this.carouselContainer, {
+      noClone: true,
       animationSpeed: this.props.animationSpeed,
       itemDuration: this.props.itemDuration,
       swipeThreshold: this.props.swipeThreshold
@@ -48,7 +50,9 @@ exports.default = (0, _createReactClass2.default)({
           _this.carouselContainer = el;
         }
       },
-      this.props.children
+      this.props.children[this.props.children.length - 1],
+      this.props.children,
+      this.props.children[0]
     );
   }
 });
