@@ -3,31 +3,36 @@
 import React from 'react';
 
 function ReactCarousel (props) {
-  const _this = this;
-  _this.props = props;
+  this.props = props;
 
-  _this.componentDidMount = function () {
-    window.jscarousel(_this.carouselContainer, {
+  this.componentDidMount = () => {
+    this.stop = window.jscarousel(this.carouselContainer, {
       noClone: true,
-      animationSpeed: _this.props.animationSpeed,
-      itemDuration: _this.props.itemDuration,
-      swipeThreshold: _this.props.swipeThreshold
+      animationSpeed: this.props.animationSpeed,
+      itemDuration: this.props.itemDuration,
+      swipeThreshold: this.props.swipeThreshold
     });
   };
 
+  this.componentWillUnmount = () => {
+    if (this.stop) {
+      this.stop();
+    }
+  };
+
   // eslint-disable-next-line
-  _this.render = function() {
+  this.render = () => {
     return (
       <div
-        className={_this.props.className}
+        className={this.props.className}
         ref={el => {
-          _this.carouselContainer = el;
+          this.carouselContainer = el;
         }}>
-        <div>{_this.props.children[_this.props.children.length - 1]}</div>
-        {_this.props.children.map((child, i) => (
+        <div>{this.props.children[this.props.children.length - 1]}</div>
+        {this.props.children.map((child, i) => (
           <div key={i}>{child}</div>
         ))}
-        <div>{_this.props.children[0]}</div>
+        <div>{this.props.children[0]}</div>
       </div>
     );
   };

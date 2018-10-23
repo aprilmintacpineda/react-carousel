@@ -4,6 +4,7 @@
   "description": "Carousel component for ReactJS.",
   "main": "lib/index.js",
   "scripts": {
+    "reinstallNodeModules": "rm -rf node_modules package-lock.json && npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run lint && node build.js && npm run copy-over",
     "copy-over": "cp lib/index.js example/src/lib/index.js",
@@ -44,18 +45,18 @@
   "author": "April Mintac Pineda",
   "license": "MIT",
   "dependencies": {
-    "js-carousel": "^1.3.3",
+    "js-carousel": "^1.3.4",
     "react": "^16.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-minify": "^0.4.3",
+    "babel-preset-minify": "^0.5.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^5.7.0",
     "eslint-plugin-react": "^7.11.1",
-    "husky": "^0.14.3",
+    "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3"
   }

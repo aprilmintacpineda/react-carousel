@@ -16,10 +16,11 @@ function _interopRequireDefault (obj) {
 
 function ReactCarousel (props) {
   var _this = this;
-  _this.props = props;
 
-  _this.componentDidMount = function () {
-    window.jscarousel(_this.carouselContainer, {
+  this.props = props;
+
+  this.componentDidMount = function () {
+    _this.stop = window.jscarousel(_this.carouselContainer, {
       noClone: true,
       animationSpeed: _this.props.animationSpeed,
       itemDuration: _this.props.itemDuration,
@@ -27,8 +28,14 @@ function ReactCarousel (props) {
     });
   };
 
+  this.componentWillUnmount = function () {
+    if (_this.stop) {
+      _this.stop();
+    }
+  };
+
   // eslint-disable-next-line
-  _this.render = function() {
+  this.render = function() {
     return _react2.default.createElement(
       'div',
       {
