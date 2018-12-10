@@ -1,6 +1,6 @@
 {
   "name": "@aprilmintacpineda/react-carousel",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Carousel component for ReactJS.",
   "main": "lib/index.js",
   "scripts": {
